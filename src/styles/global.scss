@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray-100: #e1e1e6;
+  --gray-300: #dadada;
+  --gray-500: #c1c1c1;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--gray-300);
+  color: var(--black);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h2 {
+  font-family: "Dancing Script", "Nunito", sans-serif;
+  font-size: 1.8rem;
+}
+
+header {
+  background: var(--black);
+  height: 20rem;
+  width: 100%;
+}
+
+.content-infos {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  height: 20rem;
+  align-items: center;
+  margin-top: -10rem;
+
+  figure {
+    width: 220px;
+    height: 250px;
+    margin: 0;
+    background: var(--gray-500);
+
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  .infos-name {
+    margin-top: 10px;
+    padding-left: 20px;
+
+    h1,
+    h2 {
+      color: var(--white);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .infos-idade {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .infos-habilidades {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.content-about {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 2.2rem;
+  }
+
+  .about-text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
